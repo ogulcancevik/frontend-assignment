@@ -1,0 +1,81 @@
+.nav {
+  overflow: scroll hidden;
+  display: flex;
+}
+
+.nav-item {
+  cursor: pointer;
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 24px 32px;
+
+  background-color: #fff;
+  border: 3px solid transparent;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.divide {
+  width: 10px;
+  height: 100%;
+  background: 1px rgb(0 0 0 / 8%) solid;
+}
+
+.nav-item-active {
+  background: rgb(3 129 255 / 3%);
+}
+
+.nav-item:hover {
+  border: 3px #0381ff solid;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+
+  background: white;
+  border: 1px rgb(0 0 0 / 8%) solid;
+  border-radius: 9999px;
+}
+
+.nav-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: #4a4a4a;
+}
+
+.nav-icon svg path {
+  transition: all 0.1s ease-in-out;
+}
+
+@media screen and (width <= 1220px) {
+  .nav {
+    overflow: scroll hidden;
+    font-size: 14px;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .nav {
+    overflow: scroll hidden;
+  }
+}
+
+.spin {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 5em;
+  height: 5em;
+  padding: 0;
+
+  background: red;
+}

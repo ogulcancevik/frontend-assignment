@@ -1,0 +1,88 @@
+.container {
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  gap: 40px;
+
+  padding-top: 100px;
+  padding-right: 180px;
+  padding-left: 180px;
+
+  background-color: #fbfcfc;
+}
+
+.mockup-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.mockup-wrapper > div {
+  position: relative;
+}
+
+.left-bar-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  margin-bottom: 15px;
+}
+
+.right-bar-wrapper {
+  position: absolute;
+  right: -40px;
+  bottom: 0;
+  margin-bottom: 15px;
+}
+
+@media screen and (width <= 1220px) {
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .mockup-wrapper img {
+    width: 300px;
+  }
+
+  .left-bar-wrapper img {
+    width: 42px;
+  }
+
+  .right-bar-wrapper img {
+    width: 42px;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+
+  .mockup-wrapper {
+    width: 100%;
+  }
+
+  .mockup-wrapper img {
+    width: 230px;
+  }
+
+  .left-bar-wrapper {
+    left: -25px;
+  }
+
+  .right-bar-wrapper {
+    right: -25px;
+  }
+
+  .left-bar-wrapper img {
+    width: 28px;
+  }
+
+  .right-bar-wrapper img {
+    width: 28px;
+  }
+}

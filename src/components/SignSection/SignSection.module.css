@@ -1,0 +1,96 @@
+.container {
+  overflow: hidden;
+  display: flex;
+  gap: 40px;
+
+  padding-top: 100px;
+  padding-right: 180px;
+  padding-left: 180px;
+
+  background-color: #fbfcfc;
+}
+
+.mockup-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.mockup-wrapper > div {
+  position: relative;
+  z-index: 1;
+}
+
+.sign-wrapper {
+  position: absolute;
+  top: 270px;
+  left: -100px;
+}
+
+.completed-wrapper {
+  position: absolute;
+  top: 150px;
+  right: -80px;
+}
+
+@media screen and (width <= 1220px) {
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .mockup-wrapper img {
+    width: 300px;
+  }
+
+  .sign-wrapper {
+    top: 220px;
+    left: -60px;
+  }
+
+  .sign-wrapper img {
+    width: 200px;
+  }
+
+  .completed-wrapper {
+    top: 120px;
+    right: -50px;
+  }
+
+  .completed-wrapper img {
+    width: 200px;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+
+  .mockup-wrapper {
+    width: 100%;
+  }
+
+  .mockup-wrapper img {
+    width: 230px;
+  }
+
+  .sign-wrapper {
+    top: 180px;
+    left: -40px;
+  }
+
+  .sign-wrapper img {
+    width: 150px;
+  }
+
+  .completed-wrapper {
+    top: 100px;
+    right: -30px;
+  }
+
+  .completed-wrapper img {
+    width: 150px;
+  }
+}
